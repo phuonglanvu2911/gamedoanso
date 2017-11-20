@@ -13,10 +13,10 @@ int main()
     scanf("%d", &b);
     d=a + rand()%(b-a+1);
     printf("%d", &d);
-    while (c<3)
+    while (count<3)
     {
-        c++;
-        printf("lan doan thu %d : ", c);
+        count++;
+        printf("lan doan thu %d : ", count);
         printf("so bạn doan la:");
         scanf("%d", &c);
         if (c==d)
