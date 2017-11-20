@@ -6,18 +6,18 @@ int main()
 {
     srand((unsigned int) time(0));
     int a,b,count, c, d;   // a và b là khoảng, count là biến đếm, c là số mình đoán, d là số ngẫu nhiên
-    count=3;
+    count=8;
     printf("nhap so a: ");
     scanf("%d", &a);
     printf("nhap so b: ");
     scanf("%d", &b);
     d=a + rand()%(b-a+1);
-    printf("%d", &d);
-    while (count<3)
+
+    do
     {
-        count++;
-        printf("lan doan thu %d : ", count);
-        printf("so bạn doan la:");
+
+        printf("\nlan doan thu %d :", count);
+        printf("\nso ban doan la:");
         scanf("%d", &c);
         if (c==d)
         {
@@ -25,16 +25,18 @@ int main()
             break;
         }
 
-        else if (count==3)
+        else if (count==1)
         {
             printf("YOU LOSE !!!\n");
+            printf("%d", d);
         }
 
         else if (d>c) printf("higher\n");
         else printf("lower\n");
-
+        count--;
     }
 
+    while (count!=0);
     return 0;
 }
 
