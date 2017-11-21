@@ -20,8 +20,7 @@ int main()
                             printf("ban co 8 lan doan\n\n\n");
                             d=a + rand()%(b-a+1);
                         }
-                        while (a>=b); // while để có lặp lại trò chơi game hay không
-
+                        while (a>=b); //while để khai báo a và b a>b
 
                         do // do để xuất kết quả xem đúng hay sai
                         {
